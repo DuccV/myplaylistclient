@@ -18,7 +18,7 @@ export const AddSongs = () => {
         songs.forEach(song => fd.append('Songs', song))
 
 
-        axios.post(`https://myplaylistgiotai.onrender.com/playlist/addsongs?id=${id}`,fd)
+        axios.post(`https://myplaylistserver-production.up.railway.app/playlist/addsongs?id=${id}`,fd)
         .then(response => {
             console.log('Playlist created successfully', response.data)
             setSongs([])
