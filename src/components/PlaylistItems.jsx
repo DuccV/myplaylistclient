@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom"
 export const PlaylistItems = () => {
     const [data, setData] = useState([])
 
-    axios.get('https://myplaylistgiotai.onrender.com/playlist')
+    axios.get('https://myplaylistserver-production.up.railway.app/')
         .then(res => {
             setData(res.data)
         })
