@@ -21,7 +21,7 @@ export const Playing = () => {
     const id = params.get('id');
 
     useEffect(() => {
-        axios.get(`https://myplaylistgiotai.onrender.com/playlist/findbyid?id=${id}`)
+        axios.get(`https://myplaylistserver-production.up.railway.app/playlist/findbyid?id=${id}`)
             .then(result => {
                 setList(result.data.songs);
                 setImg(result.data.image);
