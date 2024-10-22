@@ -111,7 +111,7 @@ export const Playing = () => {
     return (
         <div className="h-sc bg-gradient-to-b from-aqua to-pink fixed w-fill flex items-center justify-center">
             <div className="m-10">
-                <img src={`https://myplaylistgiotai.onrender.com/uploads/${img}`} className="w-img rounded-srch right-20 bottom-0 relative" alt="Playlist Cover" />
+                <img src={`https://myplaylistserver-production.up.railway.app/uploads/${img}`} className="w-img rounded-srch right-20 bottom-0 relative" alt="Playlist Cover" />
                 <div className="rounded-srch h-scscl w-img right-20 relative top-3 flex justify-center items-center">
                     <i className="fa-solid fa-backward relative bottom-5 -left-5 cursor-pointer" onClick={() => {
                         setIndex((i) => (i - 1 + list.length) % list.length);
