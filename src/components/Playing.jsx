@@ -123,7 +123,7 @@ export const Playing = () => {
                     <input type="range" className="fixed m-5 w-img h-1 rounded-srch cursor-pointer" value={time || 0} ref={progRef} onChange={handleProgressChange} />
                     <h6 className="font-kanit text-start left-0 absolute bottom-8">{`${Math.floor(currentTime / 60)}:${formatTime(currentTime % 60)}/${Math.floor(duration / 60)}:${formatTime(duration % 60)}`}</h6>
                 </div>
-                <audio ref={audioRef} src={`https://myplaylistgiotai.onrender.com/uploads/${url}`} />
+                <audio ref={audioRef} src={`https://myplaylistserver-production.up.railway.app/uploads/${url}`} />
             </div>
             <div className="bg-whaqua w-li h-li relative left-32 rounded-srch">
                 <div className="w-fill font-kanit text-center relative top-2 overflow-auto">
